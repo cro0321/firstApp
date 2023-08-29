@@ -79,11 +79,62 @@ function App() {
         {/* NotFound는 무조건 맨 밑에 있어줘야함. */}
         <Route path="/*" element={<Notpage/>}/>
       </Routes>
+      {/*
+      app.js
 
+    //컴파일이 되기때문에 className을 써줘도 class로 자동으로 바뀌어진다.
+ 
+    // <div className="App">
+    //  
+    
+     변수 사용 하려면 {변수명}을 해준다. 변수는 className에도 써줄수 있고 태그에도 요소에도 써줄수 있다 
+    //    속성에 변수를 써줄때는 작은 따옴표를 빼고 중괄호를 쓰고 변수명을 써준다. html안에서 style 직접작성시 1.{{}}중괄호 써준다(style태그에 한해서 중괄호를 한번더 열어줘야한다.) 2.카멜케이스로 써준다.
+    //    <h3 className={Name} style={{color: "orange", backgroundColor:"skyblue"}}>Hello React {Name}</h3>
+    //  
+
+
+    //   <div className="content">
+    //   <Content arrayNum ="0"/>
+    //   <Content arrayNum ="1"/>
+    //   <Content arrayNum ="2"/>
+    //   <Content arrayNum ="3"/>
+    //   </div>
+
+     
+    //컴포넌트 제작후 태그가 인식되어 랜더링 되는원리 이게 없었으면 배열 [0][1][2][3]으로 노가다 해줬어야함 p.38 똑같은 태그를 만들어주는것
+    //p.42 props = 파라미터같은 개념 
+     
+    //    <div className='content'>
+    //   <Content title="쌍둥이 아기판다" desc="스페셜 이벤트" desc2="테스트1"  arrayNum ="0"/>
+    //   <Content title="쌍둥이 아기판다" desc="이름을 지어주세요" desc2="테스트2"  arrayNum ="1"/>
+    //   <Content title="주토피아 동물 아카데미" desc="판다는 곰이 맞을까?" desc2="테스트3"  arrayNum ="2"/>
+    //   <Content title="귀엽게 찰칵!" desc="에버랜드 AR필터" desc2="테스트4"  arrayNum ="3"/>
+    //  </div> 
+   
+    //  같은게 또 필요하다면? 
+  
+    //    <Content title={title[0]} desc={desc[0]} desc2="테스트1"  arrayNum ="0"/>
+    //   <Content title={title[1]} desc={desc[1]} desc2="테스트2"  arrayNum ="1"/>
+    //   <Content title={title[2]} desc={desc[2]} desc2="테스트3"  arrayNum ="2"/>
+    //   <Content title={title[3]} desc={desc[3]} desc2="테스트4"  arrayNum ="3"/>
+    //   <div className="content">
+    //   <Content arrayNum ="0"/>
+    //   <Content arrayNum ="1"/>
+    //   <Content arrayNum ="2"/>
+    //   <Content arrayNum ="3"/>
+    //   </div>
+    //   {/* import 자동으로 당겨와주는거 쉽잖~ 꺽쇠 Styled 해주면됨 
+    //   <Styled />
+    // </div> 
+    //js에선는let Name2 = "홍길동2" document.querySelector(".text").textContent = Name2를 하면 홍길동2는 잘 력되겠지만 Name은 출력이 안되지만 react에서는 원하는 곳에만 랜더링을 해주어서 바뀌게 됨
+    //export defalult 이 function App이라는걸 내보내겠다~~~  
+      */}
   
     </>
   );
 }
+
+
 
  
 
