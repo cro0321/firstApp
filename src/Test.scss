@@ -1,0 +1,13 @@
+.nav{
+    background-color: peachpuff;
+    ul{
+        li{
+            &:hover{
+                background-color: green;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
