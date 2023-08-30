@@ -77,11 +77,11 @@ function App() {
         <Route path="/" element={<Main/>}/>
         <Route path="/about" element={<About/>}/>
         {/* NotFound는 무조건 맨 밑에 있어줘야함. */}
+        <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/*" element={<Notpage/>}/>
       </Routes>
-      {/*
-      app.js
 
+      {/*
     //컴파일이 되기때문에 className을 써줘도 class로 자동으로 바뀌어진다.
  
     // <div className="App">
